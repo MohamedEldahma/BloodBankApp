@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.login.RegisterFragment"
+android:background="@drawable/splash"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/redister_Fragment_TolBr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/register"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/txt_size_16"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textStyle="bold"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dim_56"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redister_Fragment_TolBr">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/txt_size_32"
+                android:paddingStart="@dimen/txt_size_32"
+                android:layout_marginBottom="@dimen/dim_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/redister_Fragment_TolBr">
+
+                <EditText
+                    android:id="@+id/register_Fragment_EditUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_40"
+                    android:background="@drawable/shape_edit"
+                    android:hint="@string/name"
+                    android:inputType="text"
+                    android:textColorHint="@color/dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:paddingStart="@dimen/dim_8"
+                    />
+
+                <EditText
+                    android:id="@+id/register_Fragment_EditEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_40"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:background="@drawable/shape_edit"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:paddingStart="@dimen/dim_8"
+
+                    app:layout_constraintTop_toBottomOf="@+id/register_Fragment_EditUserName" />
+
+                <EditText
+                    android:id="@+id/register_Fragment_EditDataOfBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_40"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:background="@drawable/shape_edit"
+                    android:hint="@string/date_of_bearth"
+                    android:inputType="date"
+                    android:textColorHint="@color/dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="212dp"
+                    android:paddingStart="@dimen/dim_8"
+
+                    app:layout_constraintTop_toBottomOf="@+id/register_Fragment_EditEmail"/>
+
+
+                <Spinner
+                    android:id="@+id/registerFragmentBloodTypesSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/register_Fragment_EditDataOfBirth"
+                    android:background="@drawable/shape_spinner"
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/register_Fragment_DataLastDonation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_40"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:background="@drawable/shape_edit"
+                    android:hint="@string/last_donation"
+                    android:inputType="datetime"
+                    android:textColorHint="@color/dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:paddingStart="@dimen/dim_8"
+
+                    app:layout_constraintTop_toBottomOf="@+id/registerFragmentBloodTypesSpinner" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:src="@drawable/icon_calendar"
+                    app:layout_constraintBottom_toBottomOf="@+id/register_Fragment_EditDataOfBirth"
+                    app:layout_constraintEnd_toEndOf="@+id/register_Fragment_EditDataOfBirth"
+                    app:layout_constraintTop_toTopOf="@+id/register_Fragment_EditDataOfBirth" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dim_8"
+                    android:src="@drawable/icon_calendar"
+                    app:layout_constraintBottom_toBottomOf="@+id/register_Fragment_DataLastDonation"
+                    app:layout_constraintEnd_toEndOf="@+id/register_Fragment_DataLastDonation"
+                    app:layout_constraintTop_toTopOf="@+id/register_Fragment_DataLastDonation" />
+
+                <Spinner
+                    android:id="@+id/register_Fragment_GovernoratesSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/register_Fragment_DataLastDonation"
+                    android:background="@drawable/shape_spinner"
+                    android:gravity="center"
+                    />
+
+                <Spinner
+                    android:id="@+id/register_Fragment_CiteSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:background="@drawable/shape_spinner"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:gravity="center"
+
+                    app:layout_constraintTop_toBottomOf="@+id/register_Fragment_GovernoratesSpinner" />
+                <EditText
+                    android:id="@+id/register_Fragment_PhoneEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_40"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:background="@drawable/shape_edit"
+                    android:hint="@string/phone"
+                    android:inputType="phone"
+                    android:textColorHint="@color/dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:paddingStart="@dimen/dim_8"
+
+                    app:layout_constraintTop_toBottomOf="@+id/register_Fragment_CiteSpinner" />
+                <EditText
+                    android:id="@+id/register_Fragment_PasswordEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_40"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:background="@drawable/shape_edit"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:paddingStart="@dimen/dim_8"
+
+                    app:layout_constraintTop_toBottomOf="@+id/register_Fragment_PhoneEdit" />
+
+                <EditText
+                    android:id="@+id/register_Fragment_Emphasis_PasswordEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_40"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:background="@drawable/shape_edit"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.25"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:paddingStart="@dimen/dim_8"
+
+                    app:layout_constraintTop_toBottomOf="@+id/register_Fragment_PasswordEdit" />
+
+                <Button
+                    android:id="@+id/register_Fragment_RegisterBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:text="@string/add"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:background="@drawable/shape_btn_new_register"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_16"
+                    app:layout_constraintTop_toBottomOf="@+id/register_Fragment_Emphasis_PasswordEdit" />
+
+                <ProgressBar
+                    android:id="@+id/progress_Bar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/register_Fragment_RegisterBtn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/register_Fragment_EditUserName"
+                    tools:visibility="gone" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

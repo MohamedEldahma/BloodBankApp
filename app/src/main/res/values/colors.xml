@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#010A3F</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark">#000</color>
+    <color name="gray">#C49C9C9C</color>
+    <color name="gray77">#F1F0F0</color>
+    <color name="color_tabbar_select">#02082E</color>
+    <color name="color_tabbar_line_select">#061052</color>
+    <color name="color_tabbar_unsSelect">#F3F3F3</color>
+    <color name="green">#00A550</color>
+    <color name="blue">#334DEB</color>
+</resources>

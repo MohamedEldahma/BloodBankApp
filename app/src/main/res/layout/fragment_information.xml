@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_information_fragment"
+    tools:context=".ui.fragment.welcomesplashscreen.InformationFragment">
+
+
+
+
+    <com.chabbal.slidingdotsplash.SlidingSplashView
+        android:layout_above="@+id/Skeep_id_btn"
+        android:id="@+id/splash_Sliding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:imageResources="@array/splash_array" >
+    </com.chabbal.slidingdotsplash.SlidingSplashView>
+
+
+    <Button
+        android:id="@+id/Skeep_id_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/skip" />
+
+</RelativeLayout>
+
+

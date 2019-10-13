@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/setAdapter_Donation_RequestscardView"
+
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dim_32"
+        android:layout_marginBottom="@dimen/dim_l2"
+        android:layout_marginEnd="@dimen/dim_4"
+        android:layout_marginStart="@dimen/dim_4"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="@dimen/dim_8"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="@dimen/dim_56"
+                android:layout_height="@dimen/dim_56"
+                android:background="@drawable/shape_background_blood"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout5"
+                app:layout_constraintHorizontal_bias="0.352"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.515"
+                 android:layout_marginEnd="@dimen/dim_l6"
+                android:gravity="center"
+               >
+
+                <TextView
+                    android:id="@+id/setAdapter_Donation_RequestsBloodTypeTex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/txt_size_20"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dim_8"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_of_the_case"
+                    android:textSize="@dimen/txt_size_8" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:text="@string/hospital"
+                    android:textSize="@dimen/txt_size_8" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_8"
+                    android:text="@string/citys"
+                    android:textSize="@dimen/txt_size_8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_marginEnd="@dimen/dim_8"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/setAdapter_DonationRequests_NameOfTheCaseTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:text="TextView"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/txt_size_12" />
+
+                <TextView
+                    android:id="@+id/setAdapter_DonationRequests_HospitalTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_4"
+                    android:text="TextView"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/txt_size_12" />
+
+                <TextView
+                    android:id="@+id/setAdapter_DonationRequests_CityTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_4"
+                    android:text="TextView"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/txt_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dim_4"
+
+                >
+
+                <ImageView
+                    android:id="@+id/setAdapter_DonationRequests_DetailsImg"
+                    android:layout_width="@dimen/dim_32"
+                    android:layout_height="@dimen/dim_32"
+                    android:src="@drawable/details"
+                    />
+
+                <ImageView
+                    android:id="@+id/setAdapter_DonationRequests_CallImg"
+                    android:layout_width="@dimen/dim_32"
+                    android:layout_height="@dimen/dim_32"
+                     android:src="@drawable/call" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray77">
+
+    <ProgressBar
+        android:id="@+id/fragment_CallMe_ProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fragment_CallMe_Logo"
+        android:layout_alignTop="@+id/fragmentCallMePhone"
+        android:layout_alignBottom="@+id/fragment_CallMe_Social"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="20dp" />
+
+    <include
+        android:id="@+id/fragment_CallMe_Tool"
+        layout="@layout/tool_bar" />
+
+    <ImageView
+        android:id="@+id/fragment_CallMe_Logo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_154"
+        android:layout_below="@+id/fragment_CallMe_Tool"
+        android:src="@drawable/logo" />
+
+
+    <LinearLayout
+        android:id="@+id/fragmentCallMePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_CallMe_Logo"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/dim_8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/call_me"
+            android:gravity="center"
+            android:text="@string/phone"
+            />
+
+        <TextView
+            android:id="@+id/fragment_CallMe_PhoneTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_8"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_CallMe_Mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragmentCallMePhone"
+        android:layout_marginTop="@dimen/dim_8"
+        android:layout_marginStart="@dimen/dim_8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/mail"
+            android:gravity="center"
+            android:text="@string/phone" />
+
+        <TextView
+            android:id="@+id/fragment_CallMe_MailTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_8"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_CallMe_Social"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_CallMe_Mail"
+        android:layout_marginTop="@dimen/dim_8"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dim_l2"
+            android:src="@drawable/icon_face" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dim_l2"
+            android:src="@drawable/icon_tewiter" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dim_l2"
+            android:src="@drawable/icon_youtube" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dim_l2"
+            android:src="@drawable/icon_whats" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dim_l2"
+            android:src="@drawable/icon_instagram" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_CallMe_Social"
+        android:orientation="vertical"
+        android:padding="@dimen/dim_8">
+
+        <EditText
+            android:id="@+id/fragment_CallMe_TitleEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dim_8"
+            android:background="@drawable/shape_border_txt"
+            android:ems="10"
+            android:inputType="textPostalAddress"
+            android:hint="@string/title"/>
+
+        <EditText
+            android:id="@+id/fragment_CallMe_MessageEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_border_txt"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint="@string/message"/>
+
+        <Button
+            android:id="@+id/fragment_CallMe_SendBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btn_new_register"
+            android:text="@string/send"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
